@@ -24,7 +24,7 @@ const uri = `mongodb+srv://${encodeURIComponent(username)}:${encodeURIComponent(
 async function databaseConnection() {
     try {
         await mongoose.connect(uri);
-        console.log('Mongo atlas connected');
+        console.log('Mongo atlas connected on port ' + port);
     } catch (err) {
         console.log('Error:', err);
         process.exit(1);
