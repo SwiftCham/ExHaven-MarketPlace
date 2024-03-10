@@ -15,6 +15,7 @@ import ViewCart from './Components/shopping-cart';
 import OrderConfirmation from './Components/order-confirmation';
 import Login from './Components/login';
 import AdminPage from './Components/admin-page';
+import Footer from './Components/footer';
 
 
 function App() {
@@ -32,13 +33,15 @@ function App() {
             <Route path="/view-products" element={<ViewProducts />} />
             <Route path="/view-food" element={<ViewFood />} />
             <Route path="/view-cart" element={<ViewCart />} />
-            {/* <Route path="/order-confirmation" element={<OrderConfirmation />} /> */}
-            {/* <Route path="/login" element={<Login />} /> */}
-            {/* <Route path="/admin-page" element={<AdminPage />} />  */}
+            <Route path="/order-confirmation" element={<OrderConfirmation />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/admin-page" element={<AdminPage />} /> 
             
             <Route path="/search" element={<SearchResults searchQuery={new URLSearchParams(window.location.search).get('query')} />} /> 
           </Routes>
         </div>
+        <Footer /> {/* calls on footer */}
+
       </>
     </BrowserRouter>
   );
