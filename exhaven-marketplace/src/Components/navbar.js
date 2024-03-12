@@ -67,10 +67,12 @@ const NavbarWithSearch = () => {
 
             <Modal show={showCart} onHide={handleCartClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Contact</Modal.Title>
+                    <Modal.Title>Cart</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     //TODO: Add cart items here
+                    <br /><br /><br /><br /><br />
+                    <br /><br /><br /><br /><br />
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleCartClose} as={Link} to="/order-confirmation">
@@ -84,7 +86,7 @@ const NavbarWithSearch = () => {
 
             <Modal show={showLogin} onHide={handleLoginClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Contact</Modal.Title>
+                    <Modal.Title>Login/Register</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <h3>Login</h3>

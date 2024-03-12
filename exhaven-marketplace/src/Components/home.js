@@ -7,8 +7,19 @@ const Home = () => {
            <h3>Trending Products:</h3>
             <div>
                 //TODO: Bootstrap Carousel of trending items from database
-                
-
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br /><br /><br /><br /><br />
+                <br /><br /><br /><br /><br />
+                <br /><br /><br /><br />
 
             </div>
             <h3>About Us</h3>
