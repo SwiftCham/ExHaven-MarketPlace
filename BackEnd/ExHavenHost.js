@@ -3,6 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const cors = require('cors');
+const mongoose = require('mongoose');
 const app = express();
 require('dotenv').config();
 const port = process.env.DB_PORT;
@@ -19,7 +20,7 @@ const username = process.env.DB_USERNAME;
 const password = process.env.DB_PASSWORD;
 const hostname = process.env.DB_HOSTNAME;
 const database = process.env.DB_DATABASE;
-const uri = `mongodb+srv://${encodeURIComponent(username)}:${encodeURIComponent(password)}@${host}/${database}?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://${encodeURIComponent(username)}:${encodeURIComponent(password)}@${hostname}/${database}?retryWrites=true&w=majority`;
 
 async function databaseConnection() {
     try {
